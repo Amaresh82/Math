@@ -14,7 +14,7 @@ import os
 # Accessing the secret
 # Streamlit looks in .streamlit/secrets.toml locally 
 # or the "Secrets" settings on the cloud automatically.
-api_key = st.secrets["OPENAI_API_KEY"]
+api_key = st.secrets["GOOGLE_API_KEY"]   
 #if api_key:
  #   st.success("API Key successfully loaded!")
 #else:
@@ -66,4 +66,5 @@ if st.button("Solve it!"):
 st.divider()
 
 st.caption("Happy Learning! if you have any feedback, Let me Know!")
+
 

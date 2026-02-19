@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 ############## 1. way to keep yor secreate key################
 # Load the variables from the .env file
@@ -66,3 +66,4 @@ if st.button("Solve it!"):
 st.divider()
 
 st.caption("Happy Learning! if you have any feedback, Let me Know!")
+

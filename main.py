@@ -5,16 +5,16 @@ from dotenv import load_dotenv
 
 ############## 1. way to keep yor secreate key################
 # Load the variables from the .env file
-load_dotenv()    
+#load_dotenv()    
 # Grab the key from the environment
-api_key = os.getenv("GOOGLE_API_KEY") 
+#api_key = os.getenv("GOOGLE_API_KEY") 
 ############## 1. way to keep yor secreate key################
 
 ############## 2. way to keep yor secreate key################
 # Accessing the secret
 # Streamlit looks in .streamlit/secrets.toml locally 
 # or the "Secrets" settings on the cloud automatically.
-#api_key = st.secrets["OPENAI_API_KEY"]
+api_key = st.secrets["OPENAI_API_KEY"]
 #if api_key:
  #   st.success("API Key successfully loaded!")
 #else:
@@ -64,4 +64,5 @@ if st.button("Solve it!"):
         st.warning("Please enter a question first!")
 
 st.divider()
+
 st.caption("Happy Learning! if you have any feedback, Let me Know!")
